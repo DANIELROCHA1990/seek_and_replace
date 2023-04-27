@@ -1,0 +1,22 @@
+<h1>Buscar e substituir em PDF</h1>
+
+<%= form_tag replace_pdf_path, method: :post, multipart: true do %>
+  <p>
+    <%= label_tag :pdf_path, "Arquivo PDF:" %>
+    <%= file_field_tag :pdf_path %>
+  </p>
+
+  <p>
+    <%= label_tag :search_term, "Buscar por:" %>
+    <%= text_field_tag :search_term %>
+  </p>
+
+  <p>
+    <%= label_tag :replacement_term, "Substituir por:" %>
+    <%= text_field_tag :replacement_term %>
+  </p>
+
+  <p>
+    <%= submit_tag "Buscar e substituir" %>
+  </p>
+<% end %>
