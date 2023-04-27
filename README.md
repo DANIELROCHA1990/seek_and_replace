@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Este App Rails baseia-se que o usuario pesquisará uma expressão em um arquivo pdf, se essa expressão existir o usuario podera substitui-la, ao substituir será criado um novo arquivo pdf para download
 
-Things you may want to cover:
+## Ruby version = 3.0.2
 
-* Ruby version
+## gems utilizadas:
+  - gem 'pdf-reader'
+  - gem 'prawn'
+  - gem 'securerandom'
+  - gem 'byebug'
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## TODO
+  - O arquivo não está sendo gerado (Unpermitted parameter apesar dos parametros estarem sendo passados)
+  - Melhorar Layout
